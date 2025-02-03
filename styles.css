@@ -1,12 +1,54 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr)); /* Flexible columns */
+    grid-template-columns: repeat(auto-fill, minmax(10vw, 1fr)); /* Flexible columns */
     grid-template-rows: auto; /* Rows will adjust based on content */
   }
+  .grid-containerM {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr)); /* Flexible columns */
+    grid-template-rows: auto; /* Rows will adjust based on content */
+  }
+  /* Slideshow container */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 100%;           /* Full width of the parent container */
+    height: 100%;          /* Adjust to make the height proportional to the viewport */
+    max-width: 100%;       /* Ensures that the slideshow doesn't exceed the screen width */
+    margin: auto;
+    overflow: hidden;
+    display: flex;         /* Helps center images horizontally */
+    justify-content: center;  /* Centers the images horizontally */
+    align-items: center;   /* Centers the images vertically if needed */
+}
+
+/* Slide images */
+.slide img {
+    width: auto;                /* Make image fill the entire width of the container */
+    height: 100vh;               /* Make image fill the entire height of the container */
+    object-fit: cover;         /* Ensures the image fills the container and maintains aspect ratio */
+}
+
+  
+  /* Hide all images initially */
+ /* Hide all slides by default */
+.slide {
+    display: none;
+}
+
+/* Fade transition effect */
+
+  
   @media (max-width: 1000px) {
+    .grid-containerM {
+  
+        grid-template-columns: repeat(1, 1fr); /* 2 columns on smaller screens */
+      }
     .grid-container {
+       
       grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
     }
+ 
   }
   
   @media (max-width: 700px) {

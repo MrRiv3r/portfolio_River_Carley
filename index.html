@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="grid-containerM">
+        <div class="grid-item">
     <h1>River Carley's Portfolio</h1>
     <h2>Independent Games</h2>
     <h3>RHCS Stretching VR</h3>
@@ -72,10 +74,54 @@
     
     
    
-   
+    </div>
   
-    
-    
-    
+    <div class="grid-item">
+        <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="images/art/1 (4).jpg" alt="Image 1">
+            </div>
+            <div class="slide fade">
+              <img src="images/art/2 (22).jpeg" alt="Image 2">
+            </div>
+            <div class="slide fade">
+              <img src="images/art/2 (25).JPG" alt="Image 3">
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        let slideIndex = 0;
+        let slides;
+
+        function showSlides() {
+            slides = document.getElementsByClassName("slide");
+
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Increment slide index to show the next slide
+            slideIndex++;
+
+            // If at the last slide, loop back to the first
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            // Show the current slide
+            slides[slideIndex - 1].style.display = "block";
+
+            // Change slide every 3 seconds
+            setTimeout(showSlides, 3000); // 3000ms = 3 seconds
+        }
+
+        showSlides(); // Start the slideshow when the page loads
+    }
+</script>
 </body>
-</head>
+</html>
