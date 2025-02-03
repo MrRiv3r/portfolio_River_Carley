@@ -12,8 +12,8 @@
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    width: 100%;           /* Full width of the parent container */
-    height: 100%;          /* Adjust to make the height proportional to the viewport */
+    width: auto;           /* Full width of the parent container */
+    height: auto;          /* Adjust to make the height proportional to the viewport */
     max-width: 100%;       /* Ensures that the slideshow doesn't exceed the screen width */
     margin: auto;
     overflow: hidden;
@@ -24,8 +24,8 @@
 
 /* Slide images */
 .slide img {
-    width: auto;                /* Make image fill the entire width of the container */
-    height: 100vh;               /* Make image fill the entire height of the container */
+    width: 40vw;                /* Make image fill the entire width of the container */
+    height: auto;               /* Make image fill the entire height of the container */
     object-fit: cover;         /* Ensures the image fills the container and maintains aspect ratio */
 }
 
