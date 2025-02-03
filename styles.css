@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr)); /* Flexible columns */
+    grid-template-rows: auto; /* Rows will adjust based on content */
+  }
+  @media (max-width: 1000px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+  }
