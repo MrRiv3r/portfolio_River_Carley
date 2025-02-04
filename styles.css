@@ -1,3 +1,27 @@
+body {
+  background-color: #596d92; /* Light grey background */
+}
+body {
+  color: #bdb1b1; /* Dark grey text */
+}
+h1, h2, h3 {
+  text-align: center;
+}
+h1 {
+  font-size: 10vw; /* Sets the font size of the h1 to 36 pixels */
+}
+h2 {
+  font-size: 4vw; /* Sets the font size of the h1 to 36 pixels */
+}
+h3 {
+  font-size: 2vw; /* Sets the font size of the h1 to 36 pixels */
+}
+p {
+  font-size: 1.3vw; /* Sets the font size of the h1 to 36 pixels */
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10vw, 1fr)); /* Flexible columns */
