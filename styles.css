@@ -66,6 +66,9 @@ p {
     width: 100%;                /* Make image fill the entire width of the container */
     height: auto;               /* Make image fill the entire height of the container */
     object-fit: cover;         /* Ensures the image fills the container and maintains aspect ratio */
+    display: flex;         /* Helps center images horizontally */
+    justify-content: center;  /* Centers the images horizontally */
+    align-items: center;   /* Centers the images vertically if needed */
 }
 
   
