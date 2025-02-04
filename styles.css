@@ -3,16 +3,26 @@
     grid-template-columns: repeat(auto-fill, minmax(10vw, 1fr)); /* Flexible columns */
     grid-template-rows: auto; /* Rows will adjust based on content */
   }
+  .grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(13.33vw, 1fr)); /* Flexible columns */
+    grid-template-rows: auto; /* Rows will adjust based on content */
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(13.33vw, 1fr)); /* Flexible columns */
+    grid-template-rows: auto; /* Rows will adjust based on content */
+  }
   .grid-containerM {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr)); /* Flexible columns */
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); /* Flexible columns */
     grid-template-rows: auto; /* Rows will adjust based on content */
   }
   /* Slideshow container */
 /* Slideshow container */
 .slideshow-container {
-    position: relative;
-    width: auto;           /* Full width of the parent container */
+    position: fixed;   
+    width: 50%;           /* Full width of the parent container */
     height: auto;          /* Adjust to make the height proportional to the viewport */
     max-width: 100%;       /* Ensures that the slideshow doesn't exceed the screen width */
     margin: auto;
@@ -24,7 +34,7 @@
 
 /* Slide images */
 .slide img {
-    width: 40vw;                /* Make image fill the entire width of the container */
+    width: 100%;                /* Make image fill the entire width of the container */
     height: auto;               /* Make image fill the entire height of the container */
     object-fit: cover;         /* Ensures the image fills the container and maintains aspect ratio */
 }
@@ -37,8 +47,43 @@
 }
 
 /* Fade transition effect */
-
+img {
+    position: relative;
+    width: 100%;           /* Full width of the parent container */
+    height: auto;          /* Full height of the parent container */
+    object-fit: cover;     /* Makes sure the image covers the container */
+}
   
+.floating-button {
+    position: fixed;           /* Fix it to the screen */
+    bottom: 20px;              /* Distance from the bottom of the screen */
+    right: 20%;               /* Distance from the right side of the screen */
+    background-color: #007BFF; /* Button background color */
+    color: white;              /* Button text color */
+    padding: 10px 20px;        /* Padding inside the button */
+    border-radius: 5px;        /* Rounded corners */
+    text-align: center;        /* Text centered */
+    font-size: 16px;           /* Font size */
+    text-decoration: none;     /* Remove underline */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for effect */
+    z-index: 1000;             /* Ensure the button is above other content */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.floating-button:hover {
+    background-color: #0056b3; /* Change color on hover */
+}
+/* Style for the black square */
+.black-square {
+    position: fixed;     /* Fix it to the screen */
+    top: 0;              /* Start from the top of the screen */
+    right: 0%;            /* Position it on the right side */
+    width: 50%;        /* Set the width of the square */
+    height: 100%;       /* Set the height of the square */
+    background-color: black; /* Set the background color to black */
+    z-index: -1;         /* Ensure it's behind all other content */
+}
+
   @media (max-width: 1000px) {
     .grid-containerM {
   
@@ -48,11 +93,27 @@
        
       grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
     }
- 
+    .grid-container3 {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+      }
+      .black-square {
+        display: none;        /* Ensure it's behind all other content */
+    }
+    .floating-button {
+        position: relative; 
+        right: -40%;          /* Fix it to the screen */
+        bottom:0px;
+    }
   }
   
   @media (max-width: 700px) {
     .grid-container {
       grid-template-columns: 1fr; /* 1 column on very small screens */
     }
+    .grid-container2 {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+      }
+      .grid-container3 {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+      }
   }
