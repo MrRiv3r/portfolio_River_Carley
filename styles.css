@@ -117,6 +117,20 @@ img {
 }
 
   @media (max-width: 1000px) {
+    h1 {
+      font-size: 20vw; /* Sets the font size of the h1 to 36 pixels */
+    }
+    h2 {
+      font-size: 12vw; /* Sets the font size of the h1 to 36 pixels */
+    }
+    h3 {
+      font-size: 6vw; /* Sets the font size of the h1 to 36 pixels */
+    }
+    p {
+      font-size: 2.9vw; /* Sets the font size of the h1 to 36 pixels */
+      padding-left: 5%;
+      padding-right: 5%;
+    }
     .grid-containerM {
   
         grid-template-columns: repeat(1, 1fr); /* 2 columns on smaller screens */
