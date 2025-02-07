@@ -16,6 +16,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>River Carley Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Popup styling */
+    /* Popup styling */
+    #popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#popup img {
+  max-width: 90%;  /* Keep the image within 90% of the popup width */
+  max-height: 90%; /* Keep the image within 90% of the popup height */
+  margin: auto;
+  display: block;
+  object-fit: contain; /* Ensures the image is fully visible without cropping */
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+       img {
+          width: 100%;
+          cursor: pointer;
+          transition: transform 0.2s;
+      }
+
+      img:hover {
+          transform: scale(1.1);
+      }
+  </style>
 </head>
 <body>
     <div class="grid-containerM">
@@ -24,59 +69,59 @@
     <h2>Independent Game</h2>
     <h3>RHCS Stretching VR</h3>
     <div class="grid-container2">
-        <div class="grid-item"> <img src="images/art/strechingVr (1).jpg" alt="Image 1"></div>
-        <div class="grid-item"> <img src="images/art/strechingVr (3).jpg" alt="Image 1"></div>
+        <div class="grid-item"> <img src="images/art/strechingVr (1).jpg" alt="Image 1" onclick="openPopup(this.src)"></div>
+        <div class="grid-item"> <img src="images/art/strechingVr (3).jpg" alt="Image 1"onclick="openPopup(this.src)"></div>
 
       </div>
       <div class="grid-container2">
       
-        <div class="grid-item"> <img src="images/art/strechingVr (2).jpg" alt="Image 1"></div>
-        <div class="grid-item"> <img src="images/art/strechingVr (6).jpg" alt="Image 1"></div>
+        <div class="grid-item"> <img src="images/art/strechingVr (2).jpg" alt="Image 1"onclick="openPopup(this.src)"></div>
+        <div class="grid-item"> <img src="images/art/strechingVr (6).jpg" alt="Image 1"onclick="openPopup(this.src)"></div>
       </div>
       <p>This was my Capstone project at sheridan for Game Design. It's a compleate game based around exercising in VR. Every component is made by me and it is published to the market place steam <a href="https://store.steampowered.com/app/782420/RHCs_StretchingVr/" target="_blank">Link to Market Place</a>        . I used unity, zbrush, blender, and substrance painter for this project. </p>
 
       <h2>3D models</h2>
       <h3>Realistic Hands</h3>
-      <img src="images/art/model1 (13).jpg" alt="Image 1">
+      <img src="images/art/model1 (13).jpg" alt="Image 1"onclick="openPopup(this.src)">
       <p>A passion project where i sculpted my own hands in Zbrush</p>
       <h3>Tri Pod Monster</h3>
-      <img src="images/art/model1 (30).jpg" alt="Image 1">
+      <img src="images/art/model1 (30).jpg" alt="Image 1"onclick="openPopup(this.src)">
       <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/BQXrXY9vBr4?si=agjVti1h80eakPTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      
       <p>An experimentation in Zbrush that i came to rather like. I included a reversed time laps of the exploritory sculpt, its curde and long but I really had no idea what I was making when I started</p>
       
       <h2>Print Publication</h2>
       <h3>House Plant Handbook</h3>
       <div class="grid-container2">
-        <div class="grid-item"> <img src="images/art/Screenshot 2025-02-04 025050.png" alt="Image 1"></div>
-        <div class="grid-item"> <img src="images/art/Screenshot 2025-02-04 025107.png" alt="Image 1"></div>
+        <div class="grid-item"> <img src="images/art/Screenshot 2025-02-04 025050.png" alt="Image 1"onclick="openPopup(this.src)"></div>
+        <div class="grid-item"> <img src="images/art/Screenshot 2025-02-04 025107.png" alt="Image 1"onclick="openPopup(this.src)"></div>
         <!-- Add as many items as needed -->
       </div>
       <p>This is a third year graphic design project focused on an iterest we were tasked to creat a multi page booklet with many info graphics. i chose house plants becuase i was really interested in them at the time especially about which plants reduced co2 and created o2 the best. the illustration are done in corel painter and the layout in Indesign. A downloadable pdf of the book let is attached</p>
 
       <h2>Freelance Logo Design</h2>
     <h3>Bright Black Logo</h3>
-    <img src="images/art/1 (6).png" alt="Image 1">
+    <img src="images/art/1 (6).png" alt="Image 1"onclick="openPopup(this.src)">
     <p>This was my second Freelance job and i was tasked to create a logo that had muli colored wood grain and black for a company called bright black which makes iredesent and black funiture</p>
     <h3>Aureole Logo</h3>
-    <img src="images/art/crest+text revisons .png" alt="Image 1">
+    <img src="images/art/crest+text revisons .png" alt="Image 1"onclick="openPopup(this.src)">
     <p>this was my fourth freelance logo job and i was contacted to create a logo for a video editing compant alled aureole. they had a AI created logo that they wanted reproduced in a similar but simplar vecotor format.</p>
       <h2>illustrations</h2>
     <h3>Imagination Collection</h3>
       <div class="grid-container3">
-        <div class="grid-item">  <img src="images/art/1ff.png" alt="Image 1"></div>
-        <div class="grid-item"> <img src="images/art/2ff.png" alt="Image 2"></div>
-        <div class="grid-item">  <img src="images/art/3ff.png" alt="Image 3"></div>
+        <div class="grid-item">  <img src="images/art/1ff.png" alt="Image 1"onclick="openPopup(this.src)"></div>
+        <div class="grid-item"> <img src="images/art/2ff.png" alt="Image 2"onclick="openPopup(this.src)"></div>
+        <div class="grid-item">  <img src="images/art/3ff.png" alt="Image 3"onclick="openPopup(this.src)"></div>
         <!-- Add as many items as needed -->
       </div>
       <p>This is a collection i made in my free time based around the visual repersentation of the cogitive sensation and phunominon of imagaination. I wanted to show the idea of how creative ideas are formed in three different styles. the left most image is about the cristilisation of an idea and done in a realsistic stye in corel painter. the senter most image is about how the mind stretches to accomidate new ideas and done in a surearealistic style and in photo shop. the right mnost image is about how the mind travels on a current and i represented the mind as an abstract leaf on the wind or water and done with more traditional mediams of marker and pen. the right most is my favorite of the three becuase it looks like a lot of different things when rotated</p>
 
       <h2>Websites</h2>
     <h3>Book Sugester</h3>
-    <img src="images/art/booksuggesdter.png" alt="Image 1">
-    <p>A school project where we had to create a informative website around an interest. I chose reading as my interst and collected all the books i read that year and created a quiz that would suggest a book based on your three answers. this website is highly adaptive to screen size and also includes a light and dark mode. this was my first website and it relied very heavly on jave script</p>
+    <img src="images/art/booksuggesdter.png" alt="Image 1"onclick="openPopup(this.src)">
+    <p>A school project where we had to create a informative website around an interest. I chose reading as my interst and collected all the books i read that year and created a quiz that would suggest a book based on your three answers. this website is highly adaptive to screen size and also includes a light and dark mode. this was my first website and it relied very heavly on jave script. it can be seen through this <a href="https://rivercarley.github.io/quiz/" target="_blank">link</a></p>
     <h3>Lecture Series Website</h3>
-    <img src="images/art/lecure png.png" alt="Image 1">
-    <p>A school project developing a web page for a lecure series taking place at ocadu. the main objective of the project was to use a input method and create a unique expernce around that input, my assigned method was clicking. the website has several instances of clikc interaction from the expantion of the artist pannels, the pop ups of the art work, and the links. Another facet of this project was to design adaptive webpages that would change layout based on screen size.</p>
+    <img src="images/art/lecure png.png" alt="Image 1"onclick="openPopup(this.src)">
+    <p>A school project developing a web page for a lecure series taking place at ocadu. the main objective of the project was to use a input method and create a unique expernce around that input, my assigned method was clicking. the website has several instances of clikc interaction from the expantion of the artist pannels, the pop ups of the art work, and the links. Another facet of this project was to design adaptive webpages that would change layout based on screen size. it can be seen through this <a href="https://rivercarley.github.io/posterthree/" target="_blank">link</a>    </p>
 
     
     
@@ -86,52 +131,52 @@
     <div class="grid-item">
         <div class="slideshow-container">
             <div class="slide fade">
-              <img src="images/art/1ff.png" alt="Image 1">
+              <img src="images/art/1ff.png" alt="Image 1"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/2ff.png" alt="Image 2">
+              <img src="images/art/2ff.png" alt="Image 2"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/3ff.png" alt="Image 3">
+              <img src="images/art/3ff.png" alt="Image 3"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/1 (6).png" alt="Image 1">
+              <img src="images/art/1 (6).png" alt="Image 1"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/booksuggesdter.png" alt="Image 2">
+              <img src="images/art/booksuggesdter.png" alt="Image 2"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/crest+text revisons .png" alt="Image 3">
+              <img src="images/art/crest+text revisons .png" alt="Image 3"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/lecure slide.png" alt="Image 1">
+              <img src="images/art/lecure slide.png" alt="Image 1"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/model1 (13).jpg" alt="Image 2">
+              <img src="images/art/model1 (13).jpg" alt="Image 2"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/model1 (29).jpg" alt="Image 3">
+              <img src="images/art/model1 (29).jpg" alt="Image 3"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/model1 (30).jpg" alt="Image 3">
+              <img src="images/art/model1 (30).jpg" alt="Image 3"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/Screenshot 2025-02-04 025050.png" alt="Image 3">
+              <img src="images/art/Screenshot 2025-02-04 025050.png" alt="Image 3"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/Screenshot 2025-02-04 025107.png" alt="Image 3">
+              <img src="images/art/Screenshot 2025-02-04 025107.png" alt="Image 3"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/strechingVr (1).jpg" alt="Image 3">
+              <img src="images/art/strechingVr (1).jpg" alt="Image 3"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/strechingVr (2).jpg" alt="Image 3">
+              <img src="images/art/strechingVr (2).jpg" alt="Image 3"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/strechingVr (3).jpg" alt="Image 3">
+              <img src="images/art/strechingVr (3).jpg" alt="Image 3"onclick="openPopup(this.src)">
             </div>
             <div class="slide fade">
-              <img src="images/art/strechingVr (6).jpg" alt="Image 3">
+              <img src="images/art/strechingVr (6).jpg" alt="Image 3"onclick="openPopup(this.src)">
             </div>
             <!-- Add more slides as needed -->
         </div>
@@ -139,7 +184,45 @@
     </div>
 </div>
 <div class="black-square"></div>
+<div id="popup">
+  <span class="close-btn" onclick="closePopup()">&times;</span>
+  <img id="popup-image" src="" alt="Popup Image">
+</div>
 
+<script>
+  // Function to open the popup with the clicked image
+// Function to open the popup with the clicked image
+function openPopup(src) {
+    // Set the image source to the clicked image
+    document.getElementById('popup-image').src = src;
+    // Display the popup
+    document.getElementById('popup').style.display = 'flex';
+    
+    // Enable the ability to toggle the popup on a second click
+    document.getElementById('popup').addEventListener('click', function(e) {
+        // If the click is not on the image, toggle the popup
+        if (e.target === this || e.target === document.getElementById('popup-image')) {
+            closePopup();
+        }
+    });
+}
+
+// Function to close the popup
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+
+// Close the popup if clicked outside the image
+document.getElementById('popup').addEventListener('click', function(e) {
+    // If the clicked target is the background (not the image), close the popup
+    if (e.target === this) {
+        closePopup();
+    }
+});
+
+
+</script>
 <script>
     window.onload = function () {
         let slideIndex = 0;
